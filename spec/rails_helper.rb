@@ -54,4 +54,15 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+  config.include Devise::TestHelpers, type: :controller
+
+  config.include FactoryGirl::Syntax::Methods
+
+  config.order = 'random'
+
+  # Make it easy to read the json response
+  def json
+    JSON.parse(response.body).with_indifferent_access
+  end
 end
