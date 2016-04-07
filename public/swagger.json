@@ -1,0 +1,62 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "0.0.0",
+        "title": "<enter your title>"
+    },
+    "basePath": "/api",
+    "paths": {
+        "/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "get pets",
+                        "schema": {
+                            "type": "object",
+                            "required": [
+                              "data"
+                            ],
+                            "properties": {
+                                "data": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/definitions/pet"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "pet": {
+            "type": "object",
+            "required": [
+                "id",
+                "attributes"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "attributes": {
+                    "type": "object",
+                    "required": [
+                        "name",
+                        "birthday"
+                    ],
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "birthday": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

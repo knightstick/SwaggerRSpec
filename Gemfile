@@ -32,7 +32,7 @@ gem 'flattened_active_admin'
 gem 'honeybadger', '~> 2.0'
 
 # API:
-gem 'active_model_serializers', '~> 0.9'
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 group :development, :test do
   gem 'byebug'
@@ -49,8 +49,6 @@ end
 group :test do
   gem 'shoulda-matchers', require: false
   gem 'timecop'
-  gem 'vcr'
-  gem 'webmock'
   gem 'database_cleaner'
   gem 'test_after_commit'
 end
