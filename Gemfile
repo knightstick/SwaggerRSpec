@@ -32,7 +32,7 @@ gem 'flattened_active_admin'
 gem 'honeybadger', '~> 2.0'
 
 # API:
-gem 'active_model_serializers', '~> 0.9'
+gem 'active_model_serializers', github: 'rails-api/active_model_serializers'
 
 group :development, :test do
   gem 'byebug'
