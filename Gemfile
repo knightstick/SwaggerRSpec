@@ -55,3 +55,4 @@ group :test do
   gem 'test_after_commit'
 end
 
+gem 'apivore'
