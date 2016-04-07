@@ -49,8 +49,6 @@ end
 group :test do
   gem 'shoulda-matchers', require: false
   gem 'timecop'
-  gem 'vcr'
-  gem 'webmock'
   gem 'database_cleaner'
   gem 'test_after_commit'
 end
