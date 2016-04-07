@@ -2,7 +2,7 @@
     "swagger": "2.0",
     "info": {
         "version": "0.0.0",
-        "title": "<enter your title>"
+        "title": "Swagger API"
     },
     "basePath": "/api",
     "paths": {
